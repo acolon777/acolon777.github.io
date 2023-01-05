@@ -29,10 +29,6 @@ html {
   box-sizing: border-box;
 }
 
-button#burger-menu {
-    display: none;
-}
-
 ul {
   list-style-type: none;
 }
@@ -43,6 +39,7 @@ a {
 }
 
 a:hover {
+    text-decoration: none;
   color: var(--secondary-color);
 }
 
@@ -74,20 +71,25 @@ body {
     display: block;
 }
 
+.hydrated {
+    visibility: inherit;
+}
+
 nav {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    
   }
 
-  nav h1 {
+  nav h2 {
     color: var(--primary-color);
   }
   
@@ -116,4 +118,35 @@ nav {
     background-color: transparent;
     cursor: pointer;
     display: none;
+    
   }
+
+  /* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+  
+    nav ul li {
+      margin: 8px;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+}
