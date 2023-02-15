@@ -130,16 +130,18 @@ nav {
       position: fixed;
       background-color: var(--bg-color);
       flex-direction: column;
-      top: 86px;
+      top: 277px;
       left: 10%;
-      width: 80%;
+      width: 40%;
       text-align: center;
-      transform: translateX(120%);
+      transform: translateX(320%);
       transition: transform 0.5s ease-in;
+      outline: auto;
+      outline-color:#8b8eaf;
     }
   
     nav ul.show {
-      transform: translateX(0);
+      transform: translateX(120%);
     }
   
     nav ul li {
