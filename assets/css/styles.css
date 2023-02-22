@@ -57,6 +57,7 @@ body {
 }
 
 .welcome-txt{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: absolute;
     top:17px;
     left:50px;
