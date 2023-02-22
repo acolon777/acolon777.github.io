@@ -50,7 +50,7 @@ body {
 .wc {
     max-width: 100vw;
     max-height: 20vh;
-    width: auto\9; /* for ie8 */
+    width: auto; /* for ie8 */
     position:relative;
     overflow:hidden;
     
@@ -129,6 +129,8 @@ nav {
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: auto;
+    padding-top: 5%;
+    margin-bottom: -5%;
   }
 
   .slideshow{
