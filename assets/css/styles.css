@@ -355,6 +355,7 @@ nav {
     .hero {
       flex-direction: column;
       gap: 0;
+      margin-bottom: -5%;
     }
   
     .slideshow {
